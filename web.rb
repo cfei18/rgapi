@@ -11,7 +11,7 @@ get '/' do
 end
 
 get '/popular' do
-  logger.info("popular called")
+  puts "popular called"
   api = RGAPI.new
   api.popular_songs
 end
