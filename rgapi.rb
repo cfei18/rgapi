@@ -15,7 +15,6 @@ class RGAPI
 
     for link in popular_links
       puts link
-      puts "<br/>"
     end
   end
 end
