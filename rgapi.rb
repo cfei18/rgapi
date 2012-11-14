@@ -13,10 +13,10 @@ class RGAPI
 
     popular_links = html_doc.css('.popular li a')
 
-    logger.info "HEY"
+    puts "HEY HEY"
     
     popular_links.each do |link|
-      logger.info "#{link}.text"
+      puts "#{link}.text"
     end
     popular_links[1].text
   end
