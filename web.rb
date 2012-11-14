@@ -1,6 +1,6 @@
 require 'sinatra'
+require 'typhoeus'
 require 'nokogiri'
-require 'connector.rb'
 
 get '/' do 
   "Hello world!"
