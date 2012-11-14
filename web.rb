@@ -1,6 +1,7 @@
 require 'sinatra'
 require 'typhoeus'
 require 'nokogiri'
+require 'logger'
 require_relative './rgapi.rb'
 require_relative './connector.rb'
 
@@ -10,6 +11,7 @@ get '/' do
 end
 
 get '/popular' do
+  logger.info("popular called")
   api = RGAPI.new
   api.popular_songs
 end
