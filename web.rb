@@ -1,6 +1,6 @@
 require 'sinatra'
-require 'typhoeus'
-require 'nokogiri'
+#require 'typhoeus'
+#require 'nokogiri'
 
 get '/' do 
   "Hello world!"
