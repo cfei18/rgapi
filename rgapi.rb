@@ -11,6 +11,6 @@ class RGAPI
     html_source = @conn.get_html 'http://rapgenius.com'
     html_doc = Nokogiri::HTML(html_source)
 
-    html_doc.xpath('//[@class="popular"')
+    html_doc.css('.popular')
   end
 end
