@@ -1,3 +1,5 @@
+require 'logger'
+
 class RGAPI
   def initialize
     @conn = Connector.new
@@ -13,10 +15,10 @@ class RGAPI
 
     popular_links = html_doc.css('.popular li a')
 
-    puts "HEY HEY"
+    logger.info "HEY HEY"
     
     popular_links.each do |link|
-      puts "#{link}.text"
+      logger.info "#{link}.text"
     end
     popular_links[1].text
   end
