@@ -13,8 +13,6 @@ class RGAPI
 
     popular_links = html_doc.css('.popular li a')
 
-    for link in popular_links
-      puts link
-    end
+    popular_links[1].text
   end
 end
