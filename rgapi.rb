@@ -4,6 +4,6 @@ class RGAPI
   end
 
   def do_something
-    "HEY HEY"
+    @connection.get_html 'http://rapgenius.com'
   end
 end
