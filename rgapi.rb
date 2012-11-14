@@ -13,6 +13,8 @@ class RGAPI
 
     popular_links = html_doc.css('.popular li a')
 
+    puts "HEY"
+    
     popular_links.each do |link|
       puts "#{link}.text"
     end
