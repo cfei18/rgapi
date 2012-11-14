@@ -1,7 +1,7 @@
 require 'sinatra'
 require 'typhoeus'
 require 'nokogiri'
-require 'rgapi.rb'
+require 'rgapi'
 
 get '/' do 
   "Hello world!"
