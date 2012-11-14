@@ -1,3 +1,3 @@
 require './web'
-$stdout.sync = true
 run Sinatra::Application
+$stdout.sync = true
