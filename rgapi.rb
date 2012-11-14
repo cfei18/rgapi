@@ -11,6 +11,10 @@ class RGAPI
     html_source = @conn.get_html 'http://rapgenius.com'
     html_doc = Nokogiri::HTML(html_source)
 
-    html_doc.css('.popular li a')
+    popular_links = html_doc.css('.popular li a')
+
+    for link in popular_links
+      puts link + "<br/>"
+    end
   end
 end
