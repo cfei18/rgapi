@@ -1,6 +1,6 @@
-require 'logger'
-
 class RGAPI
+  require 'logger'
+  
   def initialize
     @conn = Connector.new
   end
